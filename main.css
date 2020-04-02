@@ -3,11 +3,56 @@ html {
   color: white;
 }
 
-body {
-  /*font-family: */
-}
-
 div {
   background-color: black;
   color: white;
+}
+
+/* Cards */
+#card {
+  z-index: 225;
+  margin-left: 135px;
+  height: 450px;
+  width: 300px;
+  transform: rotate(330deg);
+}
+
+.card:hover {
+  transition: border-color 0.2s ease-out;
+  border-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 2.6s ease-out;
+  background-color: white;
+  color: black;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  width: 100%;
+  max-width: 450px;
+  margin: 1%;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: grey;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 60px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  transition: border-color 0.2s ease-out;
+  border-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 2.6s ease-out;
+  background-color: white;
+  color: black;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
 }
